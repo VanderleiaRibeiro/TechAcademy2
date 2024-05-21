@@ -1,16 +1,41 @@
-$primary: #093c49;
-$secundary: #a5cfcc;
-$clean: #cee2dc;
+$primary: #008080;
+$secundary:#20B2AA;
+$clean: #B0C4DE;
+
+h1{
+
+}
+
+h2{
+   
+}
+
+.header {
+   background-color: $primary;
+   position: fixed;
+   width: 100%;
+}
+ 
+.header .header-nav {
+   float: right; 
+}
+
+.show {
+   display: block !important;
+}
 
 body {
-    background: $secundary;
- }
-
- header {
-    padding: 20px;
-    background: $primary;
+    background: $clean;
  }
 
  main {
     width: 1000px;
+ }
+
+ .imagem-catalago {
+   width: 100%;
+ }
+ .carousel-inner {
+   display: flex;
+   justify-content: center;
  }
