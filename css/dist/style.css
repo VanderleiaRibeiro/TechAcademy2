@@ -1,7 +1,32 @@
+* {
+  padding: 0;
+  margin: 0%;
+}
+
 .header {
   background-color: #008080;
   position: fixed;
   width: 100%;
+}
+.header .header-nav {
+  float: right;
+}
+.header .header-nav ul {
+  list-style: none;
+  margin-top: 25px;
+}
+.header .header-nav ul li {
+  display: inline-block;
+}
+.header .header-nav ul li a {
+  margin: 20px;
+  padding: 15px;
+  color: #B0C4DE;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.header .header-nav ul li a:hover {
+  background: #20B2AA;
 }
 
 .header .header-nav {
@@ -19,8 +44,11 @@ body {
 main {
   width: 1000px;
 }
+main h1 {
+  padding-bottom: 15px;
+}
 
-.imagem-catalago {
+.imagem-catalago img {
   width: 100%;
 }
 

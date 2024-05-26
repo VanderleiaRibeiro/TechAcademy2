@@ -1,41 +1,56 @@
 $primary: #008080;
 $secundary:#20B2AA;
 $clean: #B0C4DE;
+$size:15px;
 
-h1{
-
-}
-
-h2{
-   
+* {
+   padding: 0;
+   margin: 0%;
 }
 
 .header {
    background-color: $primary;
    position: fixed;
    width: 100%;
+   & &-nav { 
+      float: right;
+      ul{
+         list-style: none;
+         margin-top: 25px;
+         li{
+            display: inline-block;
+            a{
+               margin: 20px;
+               padding: $size;
+               color: $clean;
+               text-decoration: none;
+               transition: all 0.5s;
+               &:hover {
+                  background: $secundary;
+               }
+            }
+         }
+      }
+   }
 }
  
-.header .header-nav {
-   float: right; 
-}
-
-.show {
-   display: block !important;
-}
-
 body {
     background: $clean;
  }
 
  main {
     width: 1000px;
+    h1{
+      padding-bottom: $size;
+    }
  }
 
- .imagem-catalago {
-   width: 100%;
- }
  .carousel-inner {
    display: flex;
    justify-content: center;
  }
+
+ 
+@media screen and (max-width:430px) {
+   
+}
