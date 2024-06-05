@@ -4,16 +4,27 @@
 }
 
 .header {
-  background-color: #008080;
+  background: #114949;
+  box-shadow: 0 0 10px #000;
   position: fixed;
   width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+.header .header-logo {
+  float: left;
+}
+.header .header-logo img {
+  width: 70px !important;
+  border-radius: 10px;
 }
 .header .header-nav {
   float: right;
 }
 .header .header-nav ul {
   list-style: none;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .header .header-nav ul li {
   display: inline-block;
@@ -21,38 +32,36 @@
 .header .header-nav ul li a {
   margin: 20px;
   padding: 15px;
-  color: #B0C4DE;
+  color: #b1f1e9;
   text-decoration: none;
   transition: all 0.5s;
 }
 .header .header-nav ul li a:hover {
-  background: #20B2AA;
-}
-
-.header .header-nav {
-  float: right;
-}
-
-.show {
-  display: block !important;
+  background: #176662;
 }
 
 body {
-  background: #B0C4DE;
+  background-color: #b1f1e9 !important;
 }
 
 main {
+  padding-top: 100px;
   width: 1000px;
+  margin: auto;
 }
 main h1 {
   padding-bottom: 15px;
 }
 
-.imagem-catalago img {
-  width: 100%;
+footer {
+  color: #176662;
 }
 
 .carousel-inner {
   display: flex;
   justify-content: center;
+}
+
+.contato {
+  background-image: url("imagens/contatofundo.avif");
 }
