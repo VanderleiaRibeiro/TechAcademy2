@@ -1,11 +1,20 @@
-$primary: #114949;
-$secundary:#176662;
-$clean: #b1f1e9;
-$size:15px;
+$primary: #021e30;
+$secundary: #365a63;
+$clean: #adc7df;
+$size: 15px;
+$font1: Inter, Roboto;
+$font2: Anton;
+$font3: Teko, "DM serif text";
 
 * {
    padding: 0;
    margin: 0%;
+}
+
+
+body {
+   background-color: $clean !important;
+   font: 16px Inter, Roboto;
 }
 
 .header {
@@ -16,64 +25,149 @@ $size:15px;
    padding: $size;
    box-sizing: border-box;
    z-index: 9999;
-   & &-logo{
+
+   & &-logo {
       float: left;
+
       img {
          width: 70px !important;
          border-radius: 10px;
       }
    }
-   & &-nav { 
-      float: right;
-      ul{
+
+   & &-nav {
+     width: 100%;
+     display: none;
+      ul {
          list-style: none;
          margin-top: 20px;
-         li{
-            display: inline-block;
-            a{
+
+         li {
+            padding: 10px;
+            box-sizing: border-box;
+            border-bottom: 1px solid $clean;
+            a {
                margin: 20px;
                padding: $size;
                color: $clean;
                text-decoration: none;
-               transition: all 0.5s;
-               &:hover {
-                  background: $secundary;
-               }
             }
          }
       }
    }
+   & &-menu {
+      float: right;
+      img {
+         width: 35px;
+      }
+   }
 }
- 
-body {
-    background-color: $clean !important;
- }
 
- main {
+.show {
+   display: inline-block !important;
+}
+main {
    padding-top: 100px;
-    width: 1000px;
-    margin: auto;
-    h1{
+
+   margin: auto;
+
+   h1 {
       padding-bottom: $size;
-    }
- }
+      font: $font2;
+   }
+   .catalago { //em home
+      h1{
+         font: $font3;
+      }
+      img{ 
+         width: 500px;
+      }
+   }
+   .jogo-destaque { //em home
+      h1{
+         font: $font2;
+      }
+      img{
+         width: 500px;
+      }
+   }
+}
 
- footer{
-   color:$secundary;
+.catalago-jogos{ //em jogos.php
+   h1 {
+      font: $font2;
+   }
+}
 
- }
+.flex {
+   display: flex;
+   flex-wrap: wrap;
+   & &-coluna {
+      width: 98%;
+      border: 1px solid $clean;
+      border-radius: 10px;
+      img {
+         width: 100%;
+      }
+   }
+}
 
- .carousel-inner {
+.sobre{
+   padding: auto;
+}
+
+.carousel-inner {
    display: flex;
    justify-content: center;
- }
+}
 
- .contato {
-   background-image: url("imagens/contatofundo.avif");
+.contato {
 
- }
+   width: 100%;
+   display: flex;
 
- 
-@media screen and (max-width:430px) {
-   
+   & h2 {
+      position: absolute;
+      top: 50%;
+      left: 75%;
+      transform: translate(-50%, -75%);
+   }
+
+   & img {
+      width: 100%;
+      margin: auto;
+      
+      height: 70vh;
+
+
+      z-index: -99;
+   }
+}
+
+footer {
+   background: $secundary;
+}
+
+
+@media (min-width: 1000px) and (max-width: 1920px) {
+   .header {
+      & &-menu {
+         display: none !important; 
+      }
+      & &-nav{
+         width: auto;
+         display: block;
+         float: right;
+      }
+      ul {
+         li {
+            display: inline-block;
+            border: 0;
+            a:hover {
+               color: #fff;
+            }
+         }
+      }
+   }
+
 }

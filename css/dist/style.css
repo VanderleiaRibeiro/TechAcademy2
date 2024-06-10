@@ -3,8 +3,13 @@
   margin: 0%;
 }
 
+body {
+  background-color: #adc7df !important;
+  font: 16px Inter, Roboto;
+}
+
 .header {
-  background: #114949;
+  background: #021e30;
   box-shadow: 0 0 10px #000;
   position: fixed;
   width: 100%;
@@ -20,41 +25,75 @@
   border-radius: 10px;
 }
 .header .header-nav {
-  float: right;
+  width: 100%;
+  display: none;
 }
 .header .header-nav ul {
   list-style: none;
   margin-top: 20px;
 }
 .header .header-nav ul li {
-  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #adc7df;
 }
 .header .header-nav ul li a {
   margin: 20px;
   padding: 15px;
-  color: #b1f1e9;
+  color: #adc7df;
   text-decoration: none;
-  transition: all 0.5s;
 }
-.header .header-nav ul li a:hover {
-  background: #176662;
+.header .header-menu {
+  float: right;
+}
+.header .header-menu img {
+  width: 35px;
 }
 
-body {
-  background-color: #b1f1e9 !important;
+.show {
+  display: inline-block !important;
 }
 
 main {
   padding-top: 100px;
-  width: 1000px;
   margin: auto;
 }
 main h1 {
   padding-bottom: 15px;
+  font: Anton;
+}
+main .catalago h1 {
+  font: Teko, "DM serif text";
+}
+main .catalago img {
+  width: 500px;
+}
+main .jogo-destaque h1 {
+  font: Anton;
+}
+main .jogo-destaque img {
+  width: 500px;
 }
 
-footer {
-  color: #176662;
+.catalago-jogos h1 {
+  font: Anton;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex .flex-coluna {
+  width: 98%;
+  border: 1px solid #adc7df;
+  border-radius: 10px;
+}
+.flex .flex-coluna img {
+  width: 100%;
+}
+
+.sobre {
+  padding: auto;
 }
 
 .carousel-inner {
@@ -63,5 +102,40 @@ footer {
 }
 
 .contato {
-  background-image: url("imagens/contatofundo.avif");
+  width: 100%;
+  display: flex;
+}
+.contato h2 {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -75%);
+}
+.contato img {
+  width: 100%;
+  margin: auto;
+  height: 70vh;
+  z-index: -99;
+}
+
+footer {
+  background: #365a63;
+}
+
+@media (min-width: 1000px) and (max-width: 1920px) {
+  .header .header-menu {
+    display: none !important;
+  }
+  .header .header-nav {
+    width: auto;
+    display: block;
+    float: right;
+  }
+  .header ul li {
+    display: inline-block;
+    border: 0;
+  }
+  .header ul li a:hover {
+    color: #fff;
+  }
 }
