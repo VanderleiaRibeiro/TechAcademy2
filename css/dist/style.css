@@ -3,6 +3,26 @@
   margin: 0%;
 }
 
+.grid {
+  /* aplicar a grid */
+  display: grid;
+  /* configuro as colunas */
+  grid-template-columns: 30% 30% 30%;
+}
+.grid .card {
+  /* sombra */
+  box-shadow: 0 0 10px #CCC;
+  /* borda arredondada */
+  border-radius: 10px;
+  /* margem externa */
+  margin: 10px;
+}
+.grid .card img {
+  width: 100%;
+  /* arredondar cantos */
+  border-radius: 10px 10px 0 0;
+}
+
 body {
   background-color: #adc7df !important;
   font: 16px Inter, Roboto;
@@ -79,26 +99,23 @@ main .jogo-destaque img {
   font: Anton;
 }
 
-.flex {
+.flex-game {
   display: flex;
   flex-wrap: wrap;
 }
-.flex .flex-coluna {
+.flex-game .flex-game-coluna {
   width: 98%;
   border: 1px solid #adc7df;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
-.flex .flex-coluna img {
+.flex-game .flex-game-coluna img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .sobre {
   padding: auto;
-}
-
-.carousel-inner {
-  display: flex;
-  justify-content: center;
 }
 
 .contato {
@@ -138,4 +155,11 @@ footer {
   .header ul li a:hover {
     color: #fff;
   }
+}
+.flex-game .flex-game-img {
+  width: 30%;
+}
+.flex-game h2 p {
+  width: 68%;
+  margin: 10px;
 }
