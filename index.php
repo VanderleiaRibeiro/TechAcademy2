@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GAME SEVEN</title>
 
-  <link rel="stylesheet" href="css/aos.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <base href="http://localhost/projeto2/">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/dist/style.css">
@@ -32,6 +32,7 @@
     </a>
 
     <nav class="header-nav" data-aos="fase-left">
+      
       <ul>
         <li>
           <a href="sobre">Sobre</a>
@@ -40,7 +41,7 @@
           <a href="contato">Suporte</a>
         </li>
         <li>
-          <a href="jogos">jogos</a>
+          <a href="jogos">Jogos</a>
         </li>
       </ul>
 
@@ -82,11 +83,16 @@
   </footer>
   
   <!--scripts-->
-  <script src="js/aos.js"></script>
-  <script src="js/fslightbox.js"></script>
-  <script>
-    AOS.init();
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <script>
+  AOS.init();
+  </script>
+
+  <script src="js/fslightbox.js"></script>
+  
+  <script>
+    
     function showMenu() {
       var menu = document.querySelector(".header-nav");
       menu.classList.toggle("show");

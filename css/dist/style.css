@@ -3,11 +3,26 @@
   margin: 0%;
 }
 
+.sobreG7 {
+  color: #000;
+}
+.sobreG7 img {
+  width: 100px;
+}
+
+.carousel {
+  width: 600px !important;
+  margin: auto;
+}
+.carousel .carousel-inner img {
+  padding: 20px;
+}
+
 .grid {
   /* aplicar a grid */
   display: grid;
   /* configuro as colunas */
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 33% 33% 33%;
 }
 .grid .card {
   /* sombra */
@@ -22,10 +37,17 @@
   /* arredondar cantos */
   border-radius: 10px 10px 0 0;
 }
+.grid .card p {
+  margin: 15px;
+  /* alinhar ao centro */
+  text-align: center;
+}
 
 body {
-  background-color: #adc7df !important;
-  font: 16px Inter, Roboto;
+  background-color: #04315e !important;
+  font: 16px;
+  font-family: Roboto, "arial";
+  color: #fff;
 }
 
 .header {
@@ -55,13 +77,14 @@ body {
 .header .header-nav ul li {
   padding: 10px;
   box-sizing: border-box;
-  border-bottom: 1px solid #adc7df;
+  border-bottom: 1px solid #04315e;
+  text-decoration: none !important;
 }
 .header .header-nav ul li a {
   margin: 20px;
   padding: 15px;
-  color: #adc7df;
-  text-decoration: none;
+  color: #CCC;
+  text-decoration: none !important;
 }
 .header .header-menu {
   float: right;
@@ -75,7 +98,8 @@ body {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 50px;
+  color: #fff;
   margin: auto;
 }
 main h1 {
@@ -94,6 +118,21 @@ main .jogo-destaque h1 {
 main .jogo-destaque img {
   width: 500px;
 }
+main .game-destaque-center {
+  text-align: center;
+}
+main .game-destaque-center img {
+  border-radius: 20px;
+}
+
+.btn-center {
+  width: 120px;
+  margin: 20px auto;
+}
+.btn-center .btn {
+  text-align: center;
+  border-radius: 20px;
+}
 
 .catalago-jogos h1 {
   font: Anton;
@@ -105,7 +144,7 @@ main .jogo-destaque img {
 }
 .flex-game .flex-game-coluna {
   width: 98%;
-  border: 1px solid #adc7df;
+  border: 1px solid #04315e;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -118,25 +157,9 @@ main .jogo-destaque img {
   padding: auto;
 }
 
-.contato {
-  width: 100%;
-  display: flex;
-}
-.contato h2 {
-  position: absolute;
-  top: 50%;
-  left: 75%;
-  transform: translate(-50%, -75%);
-}
-.contato img {
-  width: 100%;
-  margin: auto;
-  height: 70vh;
-  z-index: -99;
-}
-
 footer {
   background: #365a63;
+  font-size: 8px;
 }
 
 @media (min-width: 1000px) and (max-width: 1920px) {
