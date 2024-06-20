@@ -4,18 +4,27 @@
 }
 
 .sobreG7 {
+  background-color: #365a63;
   color: #000;
+  font-family: Cardo, "DM Serif Display";
 }
 .sobreG7 img {
   width: 100px;
 }
 
 .carousel {
-  width: 600px !important;
+  width: 800px !important;
   margin: auto;
 }
 .carousel .carousel-inner img {
   padding: 20px;
+}
+
+.jogo-destaque h1 {
+  font-family: "Bebas Neue";
+}
+.jogo-destaque img {
+  border-radius: 5px;
 }
 
 .grid {
@@ -46,7 +55,7 @@
 body {
   background-color: #04315e !important;
   font: 16px;
-  font-family: Roboto, "arial";
+  font-family: Cardo, "DM Serif Display";
   color: #fff;
 }
 
@@ -66,21 +75,17 @@ body {
   width: 70px !important;
   border-radius: 10px;
 }
-.header .header-nav {
-  width: 100%;
-  display: none;
-}
-.header .header-nav ul {
+.header ul {
   list-style: none;
   margin-top: 20px;
 }
-.header .header-nav ul li {
+.header ul li {
   padding: 10px;
   box-sizing: border-box;
   border-bottom: 1px solid #04315e;
   text-decoration: none !important;
 }
-.header .header-nav ul li a {
+.header ul li a {
   margin: 20px;
   padding: 15px;
   color: #CCC;
@@ -89,7 +94,8 @@ body {
 .header .header-menu {
   float: right;
 }
-.header .header-menu img {
+
+img {
   width: 35px;
 }
 
@@ -104,16 +110,16 @@ main {
 }
 main h1 {
   padding-bottom: 15px;
-  font: Anton;
+  font: "Permanent Marker";
 }
 main .catalago h1 {
-  font: Teko, "DM serif text";
+  font: "Bebas Neue";
 }
 main .catalago img {
   width: 500px;
 }
 main .jogo-destaque h1 {
-  font: Anton;
+  font: "Permanent Marker";
 }
 main .jogo-destaque img {
   width: 500px;
@@ -135,7 +141,7 @@ main .game-destaque-center img {
 }
 
 .catalago-jogos h1 {
-  font: Anton;
+  font-family: "Permanent Marker";
 }
 
 .flex-game {
@@ -155,11 +161,13 @@ main .game-destaque-center img {
 
 .sobre {
   padding: auto;
+  font-family: Cardo, "DM Serif Display";
 }
 
 footer {
   background: #365a63;
   font-size: 8px;
+  font-family: Cardo, "DM Serif Display";
 }
 
 @media (min-width: 1000px) and (max-width: 1920px) {
@@ -185,4 +193,8 @@ footer {
 .flex-game h2 p {
   width: 68%;
   margin: 10px;
+}
+
+.sobreG7 img {
+  width: 150px;
 }

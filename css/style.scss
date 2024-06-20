@@ -2,32 +2,52 @@ $primary: #021e30;
 $secundary: #365a63;
 $clean: #04315e;
 $size: 15px;
-$font1: Inter, Roboto;
-$font2: Anton;
-$font3: Teko, "DM serif text";
+$font1: Cardo, "DM Serif Display"; //fots principais
+$font2: "Permanent Marker"; //font para titulos
+$font3: "Bebas Neue"; //font p nome dos jogos
+$font4: teko; //font p texto dos jogos
+
 
 * {
    padding: 0;
    margin: 0%;
 }
-.sobreG7{
-   color:#000;
-   img{
+
+.sobreG7 {
+   //pagsobre
+   background-color: $secundary;
+   color: #000;
+   font-family: $font1;
+
+   img {
       width: 100px;
    }
 }
 
 .carousel {
-   width: 600px !important;
+   //paghome
+   width: 800px !important;
    margin: auto;
-   .carousel-inner{
-      img{
-       padding: 20px;
+
+   .carousel-inner {
+      img {
+         padding: 20px;
       }
-    }
+   }
+}
+
+.jogo-destaque {
+   h1 {
+      font-family: $font3;
+   }
+
+   img {
+      border-radius: 5px;
+   }
 }
 
 .grid {
+   //pagjogos
    /* aplicar a grid */
    display: grid;
    /* configuro as colunas */
@@ -58,8 +78,8 @@ $font3: Teko, "DM serif text";
 body {
    background-color: $clean !important;
    font: 16px;
-   font-family: Roboto , "arial";
-   color:#fff;
+   font-family: $font1;
+   color: #fff;
 }
 
 .header {
@@ -70,7 +90,7 @@ body {
    padding: $size;
    box-sizing: border-box;
    z-index: 9999;
-   
+
    & &-logo {
       float: left;
 
@@ -80,37 +100,46 @@ body {
       }
    }
 
-   & &-nav {
-      width: 100%;
-      display: none;
+//   // & &-nav {
+//       width: 100%;
+//       display: none;
+//       background-color: #FF0000;
+//       transition: background-color 0.3s ease;
+//       /* Adicione uma transição suave */
+//    }
 
-      ul {
-         list-style: none;
-         margin-top: 20px;
+//    & &-nav:hover {
+//       background-color: #00FF00;
+//       /* Cor diferente ao passar o mouse */
+//    }
 
-         li {
-            padding: 10px;
-            box-sizing: border-box;
-            border-bottom: 1px solid $clean;
+   ul {
+      list-style: none;
+      margin-top: 20px;
+
+      li {
+         padding: 10px;
+         box-sizing: border-box;
+         border-bottom: 1px solid $clean;
+         text-decoration: none !important;
+
+         a {
+            margin: 20px;
+            padding: $size;
+            color: #CCC;
             text-decoration: none !important;
-
-            a {
-               margin: 20px;
-               padding: $size;
-               color: #CCC;
-               text-decoration: none !important;
-            }
          }
       }
    }
 
+
    & &-menu {
       float: right;
-
-      img {
-         width: 35px;
-      }
    }
+}
+
+img {
+   width: 35px;
 }
 
 .show {
@@ -119,7 +148,7 @@ body {
 
 main {
    padding-top: 50px;
-   color:#fff;
+   color: #fff;
    margin: auto;
 
    h1 {
@@ -150,27 +179,32 @@ main {
          width: 500px;
       }
    }
-//  center imagens game
+
+   //  center imagens game
    & .game-destaque-center {
       text-align: center;
-     & img {
-      border-radius: 20px;
-     }
+
+      & img {
+         border-radius: 20px;
+      }
    }
 }
+
 .btn-center {
    width: 120px;
    margin: 20px auto;
-  & .btn {
-      text-align: center; 
+
+   & .btn {
+      text-align: center;
       border-radius: 20px;
    }
 }
+
 .catalago-jogos {
 
-   //em jogos.php
+   //jogos
    h1 {
-      font: $font2;
+      font-family: $font2;
    }
 }
 
@@ -193,11 +227,13 @@ main {
 
 .sobre {
    padding: auto;
+   font-family: $font1;
 }
 
 footer {
    background: $secundary;
    font-size: 8px;
+   font-family: $font1;
 }
 
 
@@ -237,5 +273,11 @@ footer {
          width: 68%;
          margin: 10px;
       }
+   }
+}
+
+.sobreG7 {
+   img {
+      width: 150px;
    }
 }

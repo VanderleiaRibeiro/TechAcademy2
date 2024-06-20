@@ -1,32 +1,27 @@
 <main>
-  <div class="catalogo">
-    <img src="imagens/banner.jpg" title="catalogo" alt="catalogo" width="100%">
-  </div>
-
-  <div class="game-destaque-center">
-  <div class="jogo-destaque">
-    <h1>Jogo em destaque</h1>
-    <img src="imagens/dino1.jpg" title="BugFromHell" alt="JogoPrincipal">
-  </div>
-  </div>
-
-    <div class="btn-center">
-    <a href="game/index.html" class=" btn btn-primary">
-      jogar agora</a>
-
-    </div>
-</main>
-<div class="sarousel">
+  <div class="sarousel">
 <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="imagens/dino1.jpg" class="d-block w-100" alt="...">
+      <img src="imagens/g7banner.jpg" class="d-block w-100" alt="dino1">
     </div>
     <div class="carousel-item">
-      <img src="imagens/jogoVinicius.jpeg" class="d-block w-100" alt="...">
+      <img src="imagens/jogoVinicius.jpeg" class="d-block w-100" alt="theLast">
     </div>
     <div class="carousel-item">
-      <img src="imagens/jogoJack.jpeg" class="d-block w-100" alt="...">
+      <img src="imagens/jogoJack.jpeg" class="d-block w-100" alt="dino2">
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/walka.jpeg" class="d-block w-100" alt="walka">
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/ninja.jpeg" class="d-block w-100" alt="ninja">
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
@@ -38,4 +33,15 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-</div>
+
+<div class="jogo-destaque">
+    <h1>Jogo do momento:</h1>
+    <img src="imagens/dino1.jpg" title="BugFromHell" alt="JogoPrincipal">
+  </div>
+
+    <div class="btn-center">
+    <a href="game/index.html" class=" btn btn-primary">
+      jogar agora</a>
+
+    </div>
+</main>
