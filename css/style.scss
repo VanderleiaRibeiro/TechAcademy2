@@ -1,5 +1,5 @@
 $primary: #021e30;
-$secundary: #365a63;
+$secundary: #60d3f0;
 $clean: #04315e;
 $size: 15px;
 $font1: Cardo, "DM Serif Display"; //fots principais
@@ -87,7 +87,7 @@ body {
    box-shadow: 0 0 10px #000;
    position: fixed;
    width: 100%;
-   padding: $size;
+   padding: 10px;
    box-sizing: border-box;
    z-index: 9999;
 
@@ -112,6 +112,15 @@ body {
 //       background-color: #00FF00;
 //       /* Cor diferente ao passar o mouse */
 //    }
+
+.btn{
+   color: #CCC !important;
+   &:hover{
+      color: white !important;
+   }
+
+
+}
 
    ul {
       list-style: none;
@@ -169,13 +178,19 @@ main {
    }
 
    .jogo-destaque {
-
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
       //em home
       h1 {
+         margin: auto;
          font: $font2;
       }
 
       img {
+         margin: auto;
          width: 500px;
       }
    }

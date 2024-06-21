@@ -4,7 +4,7 @@
 }
 
 .sobreG7 {
-  background-color: #365a63;
+  background-color: #60d3f0;
   color: #000;
   font-family: Cardo, "DM Serif Display";
 }
@@ -64,7 +64,7 @@ body {
   box-shadow: 0 0 10px #000;
   position: fixed;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   box-sizing: border-box;
   z-index: 9999;
 }
@@ -74,6 +74,12 @@ body {
 .header .header-logo img {
   width: 70px !important;
   border-radius: 10px;
+}
+.header .btn {
+  color: #CCC !important;
+}
+.header .btn:hover {
+  color: white !important;
 }
 .header ul {
   list-style: none;
@@ -118,10 +124,19 @@ main .catalago h1 {
 main .catalago img {
   width: 500px;
 }
+main .jogo-destaque {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 main .jogo-destaque h1 {
+  margin: auto;
   font: "Permanent Marker";
 }
 main .jogo-destaque img {
+  margin: auto;
   width: 500px;
 }
 main .game-destaque-center {
@@ -165,7 +180,7 @@ main .game-destaque-center img {
 }
 
 footer {
-  background: #365a63;
+  background: #60d3f0;
   font-size: 8px;
   font-family: Cardo, "DM Serif Display";
 }

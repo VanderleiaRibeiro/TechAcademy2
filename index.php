@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GAME SEVEN</title>
-
-  <link href="https://fontawesome.com/" rel="fontsicones">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <base href="http://localhost/projeto2/">
   <link rel="stylesheet" href="css/dist/style.css">
@@ -28,7 +27,7 @@
     </a>
 
     <a href="javascript:showMenu()" title="mostrar Menu" class="header-menu" data-aos="fade-left">
-      <img src="imagens/dino1.jpg" alt="menu">
+      <img src="imagens/iconmenu.jpg" alt="menu">
     </a>
 
     <nav class="header-nav" data-aos="fase-left">
@@ -37,11 +36,16 @@
         <li>
           <a href="sobre">Sobre</a>
         </li>
+
         <li>
+          <a href="jogos">Jogos</a>
+        </li>
+        <li>
+          
+        <button type="button" class="botaoSuporte btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Suporte</button>
+        </li>
 
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Suporte</button>
-
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -67,10 +71,8 @@
               </div>
             </div>
           </div>
-        </li>
-        <li>
-          <a href="jogos">Jogos</a>
-        </li>
+
+
       </ul>
 
     </nav>
@@ -108,6 +110,15 @@
     <h2>
       <p class="text-center">Desenvolvido por: Vanderléia Ribeiro</p>
     </h2>
+    <div class="social">
+      
+      <h3>Redes sociais de Game Seven</h3>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-github"></i>
+      <i class="bi bi-linkedin"></i>
+
+  </div>
   </footer>
 
   <!--scripts-->

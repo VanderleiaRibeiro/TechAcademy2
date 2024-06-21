@@ -6,7 +6,7 @@
       <img src="imagens/v2.jpeg" class="w-100" alt="vanderleia">
     </div>
     <div class="col-md-6 p-4 ps-md-0">
-    <h4><strong>Vanderléia Ribeiro</strong></h4> 
+      <h4><strong>Vanderléia Ribeiro</strong></h4>
       <h5 class="mt-0">Criadora de Bug From Hell 1.0</h5>
       <p>
         19 anos, mora atualmente na cidade de Mamborê-PR
@@ -16,18 +16,17 @@
       <p>
         Conheça mais sobre vanderleia em:
       </p>
-      <button>
-        <a href="https://www.instagram.com/vanderleiab_ribeiro?igsh=MXZwZ2RxZ2FpZjYyMw%3D%3D&utm_source=qr"><i class="fa-brands fa-facebook"></i>instagram</a>
-      </button>
 
-      <button>
-        <a href="https://github.com/VanderleiaRibeiro">GitHub</a>
-      </button>
+      <a href="https://www.instagram.com/vanderleiab_ribeiro?igsh=MXZwZ2RxZ2FpZjYyMw%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
+      <!-- 
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-github"></i>
+      <i class="bi bi-linkedin"></i> -->
 
-      <button>
-        <a href="https://www.linkedin.com/in/vanderl%C3%A9ia-ribeiro-3939a4178/">Linkedin</a>
-      </button>
-    
+        <a href="https://github.com/VanderleiaRibeiro"> <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vanderl%C3%A9ia-ribeiro-3939a4178/"> <i class="bi bi-linkedin"></i>
+        </a>
     </div>
   </div>
 
@@ -36,7 +35,7 @@
       <img src="imagens/vinicius.jpeg" class="w-100" alt="vinicius">
     </div>
     <div class="col-md-6 p-4 ps-md-0">
-    <h4><strong>Vinicius</strong></h4>
+      <h4><strong>Vinicius</strong></h4>
       <h5 class="mt-0">Criador de The Last Words</h5>
       <p>18 anos, mora atualmente em
         <br>Cursando TADS(Tecnologia em análise e desenvolvimento de sistemas), Centro Universitário Integrado
@@ -44,9 +43,10 @@
       <p>
         Conheça mais sobre Vinicius em:
       </p>
-      <button>
-        <a href="#"></a>
-      </button>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-github"></i>
+      <i class="bi bi-linkedin"></i>
     </div>
   </div>
 
@@ -64,9 +64,10 @@
       <p>
         Conheça mais sobre Elaine em:
       </p>
-      <button>
-        <a href="#"></a>
-      </button>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-github"></i>
+      <i class="bi bi-linkedin"></i>
     </div>
   </div>
 
@@ -85,13 +86,10 @@
       <p>
         Conheça mais sobre Jaqueline em:
       </p>
-      <button>
-        <a href="https://www.linkedin.com/in/jacqueline-custodio-machado-b5b8a5273/">Linkedin</a>
-      </button>
-      
-      <button>
-        <a href="https://www.instagram.com/jacqueline_custma/">Instagram</a>
-      </button>
+      <a href="https://www.linkedin.com/in/jacqueline-custodio-machado-b5b8a5273/"> <i class="bi bi-linkedin"></i>
+      </a>
+
+      <a href="https://www.instagram.com/jacqueline_custma/"><i class="bi bi-instagram"></i></a>
 
     </div>
   </div>

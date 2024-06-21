@@ -42,17 +42,27 @@ $game[4] = array(
     "banner2" => "http://localhost/projeto2/imagens/walka.jpeg",
     "nome" => "Projeto Walka",
     "descricao" => "os jogadores tem a oportunidade de enfrentar o inimigo e derrotá-lo com sua arma, o inimigo pode proporcionar ao jogadores uma sensação de realização",
-    "jogar" => "http://localhost/projeto2/game/index.html",
+    "jogar" => "http://localhost/projeto2/projetowalka/index.html",
 );
 $game[5] = array(
     "id" => 5,
     "banner" => "http://localhost/projeto2/imagens/ninja.jpeg",
     "alt" => "Ninja",
 
-    "banner2" => "http://localhost/projeto2/imagens/walka.jpeg",
+    "banner2" => "http://localhost/projeto2/imagens/ninja.jpeg",
     "nome" => "Ninja frog",
     "descricao" => ".",
     "jogar" => "http://localhost/projeto2/./index.html",
 );
 
+$game[6] = array(
+    "id" => 6,
+    "banner" => "http://localhost/projeto2/imagens/forest.jpeg",
+    "alt" => "forest",
+
+    "banner2" => "http://localhost/projeto2/imagens/forest.jpeg",
+    "nome" => "Ninja frog",
+    "descricao" => ".",
+    "jogar" => "http://localhost/projeto2/gameforest/index.html",
+);
 echo json_encode($game);
