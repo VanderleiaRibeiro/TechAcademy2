@@ -15,8 +15,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cardo:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Jaro:opsz@6..72&family=Merienda:wght@300..900&family=Permanent+Marker&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-  <!--nomes-Merienda, Cardo, Jaro, Permanent Marker, DM Serif Display, Teko, Bebas Neue -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
+  <!--nomes-Merienda, Cardo, Jaro, Permanent Marker, DM Serif Display, Teko, Bebas Neue -->
+</head>
 
 <body>
 
@@ -71,12 +73,8 @@
             </div>
           </div>
         </div>
-
-
       </ul>
-
     </nav>
-
   </header>
   <main>
 
@@ -156,22 +154,21 @@
           <a href="#" class="footer-link">Cloud</a>
         </li>
       </ul>
-      <!-- 
-            <div id="footer_subscribe">
-                <h3>Subscribe</h3>
 
-                <p>
-                    Enter your e-mail to get notified about
-                    our news solutions
-                </p>
+      <div id="footer_subscribe">
+        <h3>Subscribe</h3>
 
+        <p>
+          Entre em contato com nosso suporte para dúvidas.
+        </p>
+        <!-- 
                 <div id="input_group">
                     <input type="email" id="email">
                     <button>
                         <i class="fa-regular fa-envelope"></i>
                     </button>
-                </div>
-            </div> -->
+                </div> -->
+      </div>
     </div>
 
     <div id="footer_copyright">
@@ -196,6 +193,29 @@
       menu.classList.toggle("show");
     }
   </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
 </body>
 
 </html>

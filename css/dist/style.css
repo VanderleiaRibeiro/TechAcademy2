@@ -1,18 +1,90 @@
+:root {
+  /* FONT */
+  --font: Cardo,"DM Serif Display" ;
+  /* COLORS */
+  --color: #9176FF;
+  --bg-color: #f4f4f4;
+}
+
 * {
   padding: 0;
   margin: 0%;
 }
 
-.sobreG7 {
-  background-color: #5b30f8;
-  color: #000;
-  font-family: Cardo, "DM Serif Display";
-}
 .sobreG7 h1 {
-  padding-top: 45px;
+  padding-top: 50px;
+  font-family: Cardo, "DM Serif Display";
+  font-size: 20px;
+  background-color: #4e3fa5;
 }
-.sobreG7 img {
-  width: 100px;
+.sobreG7 .swiper {
+  width: 100%;
+}
+.sobreG7 .swiper-wrapper {
+  width: 100%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+}
+.sobreG7 .card {
+  width: 20em;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+  padding: 2em 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 2em;
+}
+.sobreG7 .card.swiper-slide:not(.swiper-slide-active) {
+  filter: blur(1px);
+}
+.sobreG7 .card .card__image {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 5px solid var(--color);
+  padding: 3px;
+  margin-bottom: 2em;
+}
+.sobreG7 .card .card__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.sobreG7 .card .card__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sobreG7 .card .card__content .card__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  top: 0.2em;
+}
+.sobreG7 .card .card__content .card__name {
+  color: var(--color);
+}
+.sobreG7 .card .card__content .card__text {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1em 0;
+}
+.sobreG7 .card .card__content .card__btn {
+  background-color: var(--color);
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-top: 0.5em;
+  cursor: pointer;
 }
 
 .carouselExampleAutoplaying img {
@@ -118,25 +190,33 @@ main h1 {
   padding-bottom: 15px;
   font: "Permanent Marker";
 }
+main .container h2 {
+  padding-top: 70px;
+  font-family: Cardo, "DM Serif Display";
+}
+main .container .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 70px;
+}
+main .container .grid .coluna {
+  box-shadow: 0 0 10px #81c1fd;
+  border-radius: 10px;
+  margin: 10px;
+}
+main .container .grid .coluna img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+main .container .grid .coluna p {
+  margin: 15px;
+  text-align: center;
+}
 main .catalago h1 {
   font: "Bebas Neue";
 }
 main .catalago img {
-  width: 500px;
-}
-main .jogo-destaque {
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-main .jogo-destaque h1 {
-  margin: auto;
-  font: "Permanent Marker";
-}
-main .jogo-destaque img {
-  margin: auto;
   width: 500px;
 }
 main .game-destaque-center {

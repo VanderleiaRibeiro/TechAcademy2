@@ -11,6 +11,14 @@ $color-neutral-10: #f4f4f4;
 $color-neutral-30: #999999;
 $color-neutral-40: #666666;
 
+:root{
+   /* FONT */
+   --font: Cardo,"DM Serif Display" ;
+ 
+   /* COLORS */
+   --color: #9176FF;
+   --bg-color: #f4f4f4;
+ }
 
 * {
    padding: 0;
@@ -18,17 +26,108 @@ $color-neutral-40: #666666;
 }
 
 .sobreG7 {
-   //pagsobre
    h1{
-      padding-top: 45px;
+      padding-top: 50px;
+      font-family: $font1;
+      font-size: 20px;
+      background-color: #4e3fa5;
    }
-   background-color: $secundary;
-   color: #000;
-   font-family: $font1;
+   .swiper {
+      width: 100%;
+    }
+    
+    .swiper-wrapper {
+      width: 100%;
+      height: 35em;
+      display: flex;
+      align-items: center;
+    }
+    
+    .card {
+      width: 20em;
+      height: 90%;
+      background-color: #fff;
+      border-radius: 2em;
+      box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+      padding: 2em 1em;
+    
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    
+      margin: 0 2em;
+    
+      &.swiper-slide:not(.swiper-slide-active) {
+        filter: blur(1px);
+      }
+    
+      .card__image {
+        width: 10em;
+        height: 10em;
+        border-radius: 50%;
+        border: 5px solid var(--color);
+        padding: 3px;
+        margin-bottom: 2em;
+    
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    
+      .card__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+        .card__title {
+          font-size: 1.5rem;
+          font-weight: 500;
+          position: relative;
+          top: .2em;
+        }
+    
+        .card__name {
+          color: var(--color);
+        }
+    
+        .card__text {
+          text-align: center;
+          font-size: 1.1rem;
+          margin: 1em 0;
+        }
+    
+        .card__btn {
+          background-color: var(--color);
+          color: #fff;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: 600;
+          border: none;
+          padding: .5em;
+          border-radius: .5em;
+          margin-top: .5em;
+          cursor: pointer;
+        }
+      }
+    }
+   //pagsobre
+   // h1{
+   //    padding-top: 45px;
+   // }
+   // background-color: $secundary;
+   // color: #000;
+   // font-family: $font1;
 
-   img {
-      width: 100px;
-   }
+   // img {
+   //    width: 100px;
+   // }
+
+   // i.bi {
+   //    font-size: 30px; // Tamanho desejado para os ícones
+   //  }
 }
 
 .carouselExampleAutoplaying{
@@ -155,6 +254,35 @@ main {
       font: $font2;
    }
 
+   .container {
+      h2{
+         padding-top: 70px;
+         font-family: $font1;
+      }
+   .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); // Utilizando repeat() para simplificar a definição das colunas
+      gap: 20px; // Espaçamento entre as colunas e linhas da grid
+      padding-bottom: 70px;
+  }
+  
+  .grid .coluna {
+      box-shadow: 0 0 10px #81c1fd;
+      border-radius: 10px;
+      margin: 10px;
+  
+      img {
+          width: 100%;
+          border-radius: 10px 10px 0 0; // Aplicando borda arredondada apenas nos cantos superiores
+      }
+  
+      p {
+          margin: 15px;
+          text-align: center;
+      }
+  }
+   }
+
    .catalago {
 
       //em home
@@ -167,23 +295,23 @@ main {
       }
    }
 
-   .jogo-destaque {
-      display: flex;
-      margin: auto;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      //em home
-      h1 {
-         margin: auto;
-         font: $font2;
-      }
+   // .jogo-destaque {
+   //    display: flex;
+   //    margin: auto;
+   //    flex-direction: column;
+   //    justify-content: space-around;
+   //    align-items: center;
+   //    //em home
+   //    h1 {
+   //       margin: auto;
+   //       font: $font2;
+   //    }
 
-      img {
-         margin: auto;
-         width: 500px;
-      }
-   }
+   //    img {
+   //       margin: auto;
+   //       width: 500px;
+   //    }
+   // }
 
    //  center imagens game
    & .game-destaque-center {

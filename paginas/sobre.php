@@ -1,7 +1,87 @@
 <div class="sobreG7">
-  <h1>Aqui você pode ver um pouco sobre nossos criadores!</h1>
 
-  <div class="row g-0 bg-body-secondary position-relative">
+<h1>Aqui você pode ver um pouco sobre nossos criadores!</h1>
+
+<section class="swiper mySwiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="imagens/vanderleia.jpeg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Vanderléia Ribeiro</span>
+          <span class="card__name">Criadora de Bug From Hell 1.0</span>
+          <p class="card__text">19 anos, Mora atualmente em Mamborê-PR<p>
+       
+      <a href="https://www.instagram.com/vanderleiab_ribeiro?igsh=MXZwZ2RxZ2FpZjYyMw%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
+
+      <a href="https://github.com/VanderleiaRibeiro"> <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/vanderl%C3%A9ia-ribeiro-3939a4178/"> <i class="bi bi-linkedin"></i>
+      </a>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="imagens/vinicius.jpeg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Vinicius</span>
+          <span class="card__name">Criador de The Last Words</span>
+          <p class="card__text">18 anos, mora atualmente em Araruna-PR</p>
+          
+      <a href="https://www.instagram.com/vinicius_ferreira254?igsh=MXNvOWduNXY3eGxuOQ=="> <i class="bi bi-instagram"></i></a>
+      <i class="bi bi-github"></i>
+      <i class="bi bi-linkedin"></i>
+          </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="imagens/Jack.jpeg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Jaqueline Custódio</span>
+          <span class="card__name">Criadora de Help Sauro</span>
+          <p class="card__text">24 anos, Mora atualmente em Campo Mourão-PR</p>
+          <a href="https://www.linkedin.com/in/jacqueline-custodio-machado-b5b8a5273/"> <i class="bi bi-linkedin"></i>
+      </a>
+
+      <a href="https://www.instagram.com/jacqueline_custma/"><i class="bi bi-instagram"></i></a>
+      <i class="bi bi-github"></i>
+      <i class="bi bi-facebook"></i>
+
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="imagens/elaine.jpeg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Elaine Rafael</span>
+          <span class="card__name">Criadora de Walka</span>
+          <p class="card__text">18 anos, Mora atualmente em Iretama-PR</p>
+        </div>
+        <i class="bi bi-instagram"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-github"></i>
+      <i class="bi bi-linkedin"></i>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- <h1>Aqui você pode ver um pouco sobre nossos criadores!</h1> -->
+
+  <!-- <div class="row g-0 bg-body-secondary position-relative">
     <div class="col-md-6 mb-md-0 p-md-4">
       <img src="imagens/v2.jpeg" class="w-100" alt="vanderleia">
     </div>
@@ -18,10 +98,6 @@
       </p>
 
       <a href="https://www.instagram.com/vanderleiab_ribeiro?igsh=MXZwZ2RxZ2FpZjYyMw%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
-      <!-- 
-      <i class="bi bi-facebook"></i>
-      <i class="bi bi-github"></i>
-      <i class="bi bi-linkedin"></i> -->
 
       <a href="https://github.com/VanderleiaRibeiro"> <i class="bi bi-github"></i>
       </a>
@@ -94,5 +170,5 @@
       <i class="bi bi-facebook"></i>
 
     </div>
-  </div>
+  </div> -->
 </div>
