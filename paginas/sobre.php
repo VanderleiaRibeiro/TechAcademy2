@@ -23,10 +23,10 @@
       <i class="bi bi-github"></i>
       <i class="bi bi-linkedin"></i> -->
 
-        <a href="https://github.com/VanderleiaRibeiro"> <i class="bi bi-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/vanderl%C3%A9ia-ribeiro-3939a4178/"> <i class="bi bi-linkedin"></i>
-        </a>
+      <a href="https://github.com/VanderleiaRibeiro"> <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/vanderl%C3%A9ia-ribeiro-3939a4178/"> <i class="bi bi-linkedin"></i>
+      </a>
     </div>
   </div>
 
@@ -37,13 +37,13 @@
     <div class="col-md-6 p-4 ps-md-0">
       <h4><strong>Vinicius</strong></h4>
       <h5 class="mt-0">Criador de The Last Words</h5>
-      <p>18 anos, mora atualmente em
+      <p>18 anos, mora atualmente em Araruna
         <br>Cursando TADS(Tecnologia em análise e desenvolvimento de sistemas), Centro Universitário Integrado
       </p>
       <p>
         Conheça mais sobre Vinicius em:
       </p>
-      <i class="bi bi-instagram"></i>
+      <a href="https://www.instagram.com/vinicius_ferreira254?igsh=MXNvOWduNXY3eGxuOQ=="> <i class="bi bi-instagram"></i></a>
       <i class="bi bi-facebook"></i>
       <i class="bi bi-github"></i>
       <i class="bi bi-linkedin"></i>
@@ -90,6 +90,8 @@
       </a>
 
       <a href="https://www.instagram.com/jacqueline_custma/"><i class="bi bi-instagram"></i></a>
+      <i class="bi bi-github"></i>
+      <i class="bi bi-facebook"></i>
 
     </div>
   </div>

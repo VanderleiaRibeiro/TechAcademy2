@@ -4,20 +4,20 @@
 }
 
 .sobreG7 {
-  background-color: #60d3f0;
+  background-color: #5b30f8;
   color: #000;
   font-family: Cardo, "DM Serif Display";
+}
+.sobreG7 h1 {
+  padding-top: 45px;
 }
 .sobreG7 img {
   width: 100px;
 }
 
-.carousel {
-  width: 800px !important;
-  margin: auto;
-}
-.carousel .carousel-inner img {
-  padding: 20px;
+.carouselExampleAutoplaying img {
+  width: 100%;
+  height: auto;
 }
 
 .jogo-destaque h1 {
@@ -64,7 +64,6 @@ body {
   box-shadow: 0 0 10px #000;
   position: fixed;
   width: 100%;
-  padding: 10px;
   box-sizing: border-box;
   z-index: 9999;
 }
@@ -73,7 +72,9 @@ body {
 }
 .header .header-logo img {
   width: 70px !important;
-  border-radius: 10px;
+  border-radius: 6px;
+  padding-top: 12px;
+  padding-left: 5px;
 }
 .header .btn {
   color: #CCC !important;
@@ -100,9 +101,8 @@ body {
 .header .header-menu {
   float: right;
 }
-
-img {
-  width: 35px;
+.header img {
+  width: 10px;
 }
 
 .show {
@@ -156,6 +156,7 @@ main .game-destaque-center img {
 }
 
 .catalago-jogos h1 {
+  padding-top: 40px;
   font-family: "Permanent Marker";
 }
 
@@ -180,7 +181,7 @@ main .game-destaque-center img {
 }
 
 footer {
-  background: #60d3f0;
+  background: #5b30f8;
   font-size: 8px;
   font-family: Cardo, "DM Serif Display";
 }

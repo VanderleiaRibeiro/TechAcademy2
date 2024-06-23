@@ -4,7 +4,7 @@
 
 <?php
 
-$dadosApi = file_get_contents("http://localhost/projeto2/api/jogo.php");
+$dadosApi = file_get_contents("https://gamesevenn.000webhostapp.com/");
 $dadosApi = json_decode($dadosApi);
 
 foreach ($dadosApi as $dados) {
