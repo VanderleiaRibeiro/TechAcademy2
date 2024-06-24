@@ -34,8 +34,92 @@
     </button>
   </div>
 
+  <h1>Jogos em destaque:</h1>
+
   <div class="container">
-    <h2>Jogos em Destaque</h2>
+    <!-- Card 1 -->
+    <div class="card card-1">
+      <!-- card-header -->
+      <div class="card-header">
+        <img src="imagens/dino1.jpg" alt="dino" class="card-img" />
+      </div>
+      <!-- card-header -->
+
+      <!-- card-body -->
+      <div class="card-body">
+        <h3 class="card-local"></h3>
+        <h2 class="card-titulo">Bug From Hell 1.0</h2>
+        <p class="card-texto">
+         Embarque nessa aventura 
+        </p>
+      </div>
+      <!-- card-body -->
+
+      <!-- card-footer -->
+      <div class="card-footer">
+        <a href="game/index.html">Jogar agora</a>
+      </div>
+      <!-- card-footer -->
+    </div>
+    <!-- Card 1 -->
+
+    <!-- Card 2 -->
+    <div class="card card-2">
+      <!-- card-header -->
+      <div class="card-header">
+        <img src="imagens/jogoVinicius.jpeg" alt="theLastWords" class="card-img" />
+      </div>
+      <!-- card-header -->
+
+      <!-- card-body -->
+      <div class="card-body">
+        <h3 class="card-local"></h3>
+        <h2 class="card-titulo">The Last Words </h2>
+        <p class="card-texto">
+          
+        </p>
+      </div>
+      <!-- card-body -->
+
+      <!-- card-footer -->
+      <div class="card-footer">
+        <a href="theLast/index.html" alt="theLastWords">Jogar agora</a>
+      </div>
+      <!-- card-footer -->
+    </div>
+    <!-- Card 2 -->
+
+    <!-- Card 3 -->
+    <div class="card card-3">
+      <!-- card-header -->
+      <div class="card-header">
+        <img src="imagens/forest.jpeg" alt="forest" class="card-img" />
+      </div>
+      <!-- card-header -->
+
+      <!-- card-body -->
+      <div class="card-body">
+        <h3 class="card-local"></h3>
+        <h2 class="card-titulo">Forest</h2>
+        <p class="card-texto">
+      
+        </p>
+      </div>
+      <!-- card-body -->
+
+      <!-- card-footer -->
+      <div class="card-footer">
+        <a href="game/index.html">Jogar Agora</a>
+      </div>
+      <!-- card-footer -->
+    </div>
+    <!-- Card 3 -->
+
+    <!-- Link Tutorial: https://youtu.be/UEm65E2_Y2Q -->
+  </div>
+  <!-- 
+  <div class="container">
+    <h2>Jogos em Destaque:</h2>
 
     <div class="grid">
       <div class="coluna">
@@ -50,7 +134,7 @@
         </div>
       </div> <!--fim da primeira coluna-->
 
-      <div class="coluna">
+  <!-- <div class="coluna">
         <img src="imagens/jogoVinicius.jpeg" alt="theLastWords">
         <p>
           <strong>The Last Words</strong>
@@ -70,9 +154,9 @@
             jogar agora</a>
 
         </div>
-      </div> <!--fim da terceira coluna-->
-    </div>
-  </div>
+      <!-- </div> fim da terceira coluna-->
+  <!-- </div>
+  </div> -->
 
   <!-- <div class="jogo-destaque">
     <h1>Jogo do momento:</h1>
@@ -84,5 +168,5 @@
     <a href="game/index.html" class=" btn btn-primary">
       jogar agora</a> -->
 
-  </div>
+  <!-- </div> -->
 </main>

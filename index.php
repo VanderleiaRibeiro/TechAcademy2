@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cardo:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Jaro:opsz@6..72&family=Merienda:wght@300..900&family=Permanent+Marker&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
   <!--nomes-Merienda, Cardo, Jaro, Permanent Marker, DM Serif Display, Teko, Bebas Neue -->
 </head>
@@ -179,6 +179,7 @@
   </footer>
 
   <!--scripts-->
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>

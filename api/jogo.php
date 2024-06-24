@@ -6,7 +6,7 @@ $path = "https://gamesevenn.000webhostapp.com/";
 
 $game[1] = array(
     "id" => 1,
-    "banner" => "http://gamesevenn.000webhostapp.com/imagens/dino1.1.png",
+    "banner" => "http://localhost/projeto2/imagens/dino1.1.png",
     "alt" => "Bug From Hell",
 
     "banner2" => "http://gamesevenn.000webhostapp.com/imagens/dino1.1.jpg",

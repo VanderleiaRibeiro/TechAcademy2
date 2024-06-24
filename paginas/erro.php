@@ -1,4 +1,4 @@
-<div class="container">
+<div class="erropagina">
     <img src="imagens/erro.jpg" alt="Página não encontrada" title="erro">
 
     <h2>
