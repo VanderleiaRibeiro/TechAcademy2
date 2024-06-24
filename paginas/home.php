@@ -50,7 +50,7 @@
         <h3 class="card-local"></h3>
         <h2 class="card-titulo">Bug From Hell 1.0</h2>
         <p class="card-texto">
-         Embarque nessa aventura 
+          Ajude o Dino a chegar até o fim dessa jornada, mas lembre-se, no caminho há obstacúlos.
         </p>
       </div>
       <!-- card-body -->
@@ -76,7 +76,7 @@
         <h3 class="card-local"></h3>
         <h2 class="card-titulo">The Last Words </h2>
         <p class="card-texto">
-          
+          Embarque em uma jornada assustadora através de um mundo 2D repleto de perigos e mistérios.
         </p>
       </div>
       <!-- card-body -->
@@ -102,7 +102,7 @@
         <h3 class="card-local"></h3>
         <h2 class="card-titulo">Forest</h2>
         <p class="card-texto">
-      
+          Imagine um jogo espacial frenético onde você controla uma nave espacial avançando por cenários cheios de asteroides, naves inimigas e obstáculos.
         </p>
       </div>
       <!-- card-body -->

@@ -52,7 +52,7 @@ $game[5] = array(
     "banner2" => "http://localhost/projeto2/imagens/ninja.jpeg",
     "nome" => "Ninja frog",
     "descricao" => "Embarque nesta incrivel jornada de aventura e ação, desvendando mistérios sombrios e se torne um ninja",
-    "jogar" => "http://localhost/projeto2/projetowalka/index.html",
+    "jogar" => "http://localhost/projeto2/ninja/index.html",
 );
 
 $game[6] = array(

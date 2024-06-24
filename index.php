@@ -7,7 +7,7 @@
   <title>GAME SEVEN</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <base href="http://localhost/projeto2/">
+  <base href="https://gamesevenn.000webhostapp.com/">
   <link rel="stylesheet" href="css/dist/style.css">
   <link rel="stylesheet" href="stylesheet/style.css">
   <link rel="shortcut icon" href="imagens/logo.gameseven.jpg">
