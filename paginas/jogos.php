@@ -4,12 +4,12 @@
 
 <?php
 
-$dadosApi = file_get_contents("https://gamesevenn.000webhostapp.com/");
+$dadosApi = file_get_contents("http://bugfromhell1o.x10.mx/api/jogo.php");//"http://localhost/projeto2/api/jogo.php/"
 $dadosApi = json_decode($dadosApi);
 
 foreach ($dadosApi as $dados) {
 }
-    ?>
+    ?>  
 
 
 <div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xxl-3 row-cols-fluid-4 g-4 x-4 m-3">

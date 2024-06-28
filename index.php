@@ -7,9 +7,9 @@
   <title>GAME SEVEN</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <base href="https://gamesevenn.000webhostapp.com/">
+  <base href="http://bugfromhell1o.x10.mx/">
   <link rel="stylesheet" href="css/dist/style.css">
-  <link rel="stylesheet" href="stylesheet/style.css">
+  <link rel="stylesheet" href="css/dist/style.css">
   <link rel="shortcut icon" href="imagens/logo.gameseven.jpg">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,86 +22,69 @@
 
 <body>
 
-  <header class="header">
+  <header style="background-color: #356ba1 !important;" class="header">
 
-    <a href="index.php" title="Home" class="header-logo" data-aos="fade-right">
-      <img src="imagens/logo.gameseven.jpg" alt="aberturalogo">
-    </a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: #356ba1 !important;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.php"><img src="imagens/logo.gameseven.jpg" alt="" style="width: 73px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-    <a href="javascript:showMenu()" title="mostrar Menu" class="header-menu" data-aos="fade-left">
-      <img src="imagens/iconmenu.jpg" alt="menu">
-    </a>
+          </ul>
 
-    <nav class="header-nav" data-aos="fase-left">
-
-      <ul>
-        <li>
-          <a href="sobre">Sobre</a>
-        </li>
-
-        <li>
-          <a href="jogos">Jogos</a>
-        </li>
-        <li>
-
-          <button type="button" class="botaoSuporte btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Suporte</button>
-        </li>
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Entre em contato conosco!</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="mb-3">
-                    <label for="recipient-name" class="col-form-label">E-mail:</label>
-                    <input type="text" class="form-control" id="recipient-name">
-                  </div>
-                  <div class="mb-3">
-                    <label for="message-text" class="col-form-label">Mensagem:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">calcelar</button>
-                <button type="button" class="btn btn-primary">Enviar</button>
-              </div>
-            </div>
-          </div>
         </div>
-      </ul>
+        <div class="d-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jogos">Jogos</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="formulario">Login</a>
+            </li> -->
+
+          </ul>
+        </div>
+      </div>
+      </div>
     </nav>
   </header>
   <main>
 
-    <?php
-    if (isset($_GET["param"])) {
-      $param = $_GET["param"];
-      $p = explode("/", $param);
-    }
-    $page = $p[0] ?? "home";
-    $jogo = $p[1] ?? NULL;
+  <?php
+if (isset($_GET["param"])) {
+    $param = $_GET["param"];
+    $p = explode("/", $param);
+}
+$page = $p[0] ?? "home";
+$jogo = $p[1] ?? NULL;
 
-    if ($page == "jogo") {
-      $pagina = "jogo/{$jogo}.php";
-    } else {
-      $pagina = "paginas/{$page}.php";
-    }
-    if (file_exists($pagina)) {
-      include $pagina;
-    } else {
-      include "paginas/erro.php";
-    }
-
-    ?>
+if ($page == "jogo") {
+    $pagina = "jogo/{$jogo}.php";
+} else if ($page == "formulario") {
+    $pagina = "formulario.php"; // Arquivo PHP que contém o formulário
+} else {
+    $pagina = "paginas/{$page}.php";
+}
+if (file_exists($pagina)) {
+    include $pagina;
+} else {
+    include "paginas/erro.php";
+}
+?>
 
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 
 
   <footer>
@@ -161,13 +144,34 @@
         <p>
           Entre em contato com nosso suporte para dúvidas.
         </p>
-        <!-- 
-                <div id="input_group">
-                    <input type="email" id="email">
-                    <button>
-                        <i class="fa-regular fa-envelope"></i>
-                    </button>
-                </div> -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Suporte</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Entre em contato conosco!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">E-mail:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Mensagem:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -216,7 +220,63 @@
       },
     });
   </script>
+  <script>
+    const form = document.getElementById('form');
+    const campos = document.querySelectorAll('.required');
+    const spans = document.querySelectorAll('.span-required');
+    const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      nameValidate();
+      emailValidate();
+      mainPasswordValidate();
+      comparePassword();
+    });
+
+    function setError(index) {
+      campos[index].style.border = '2px solid #e63636';
+      spans[index].style.display = 'block';
+    }
+
+    function removeError(index) {
+      campos[index].style.border = '';
+      spans[index].style.display = 'none';
+    }
+
+    function nameValidate() {
+      if (campos[0].value.length < 3) {
+        setError(0);
+      } else {
+        removeError(0);
+      }
+    }
+
+    function emailValidate() {
+      if (!emailRegex.test(campos[1].value)) {
+        setError(1);
+      } else {
+        removeError(1);
+      }
+    }
+
+    function mainPasswordValidate() {
+      if (campos[2].value.length < 8) {
+        setError(2);
+      } else {
+        removeError(2);
+        comparePassword();
+      }
+    }
+
+    function comparePassword() {
+      if (campos[2].value == campos[3].value && campos[3].value.length >= 8) {
+        removeError(3);
+      } else {
+        setError(3);
+      }
+    }
+  </script>
 </body>
 
 </html>

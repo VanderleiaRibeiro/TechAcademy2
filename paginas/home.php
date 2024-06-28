@@ -1,6 +1,6 @@
 <main>
 
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="z-index: 1">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="imagens/g7banner.1.png" class="d-block w-100" alt="...">
@@ -109,7 +109,7 @@
 
       <!-- card-footer -->
       <div class="card-footer">
-        <a href="game/index.html">Jogar Agora</a>
+        <a href="gameforest/index.html">Jogar Agora</a>
       </div>
       <!-- card-footer -->
     </div>
